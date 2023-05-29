@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[login status :: true]]>
@@ -8,19 +8,40 @@
       <![CDATA[logout status :: true]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-29T09:27:37 IST" name="pom_Suite" finished-at="2023-05-29T09:28:10 IST" duration-ms="32836">
+  <suite started-at="2023-05-29T22:52:25 IST" name="pom_Suite" finished-at="2023-05-29T22:52:58 IST" duration-ms="33280">
     <groups>
     </groups>
-    <test started-at="2023-05-29T09:27:37 IST" name="pom_Test" finished-at="2023-05-29T09:28:10 IST" duration-ms="32836">
+    <test started-at="2023-05-29T22:52:25 IST" name="pom_Test" finished-at="2023-05-29T22:52:58 IST" duration-ms="33280">
       <class name="test_Runner.Driver_Test">
-        <test-method signature="login()[pri:1, instance:test_Runner.Driver_Test@2accdbb5]" started-at="2023-05-29T09:27:59 IST" name="login" finished-at="2023-05-29T09:28:04 IST" duration-ms="5044" status="PASS">
+        <test-method signature="login()[pri:1, instance:test_Runner.Driver_Test@247d8ae]" started-at="2023-05-29T22:52:40 IST" name="login" finished-at="2023-05-29T22:52:44 IST" duration-ms="3747" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[login status :: true]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="logout()[pri:2, instance:test_Runner.Driver_Test@2accdbb5]" started-at="2023-05-29T09:28:04 IST" name="logout" finished-at="2023-05-29T09:28:10 IST" duration-ms="5401" status="PASS">
+        <test-method signature="addUser(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:test_Runner.Driver_Test@247d8ae]" started-at="2023-05-29T22:52:44 IST" name="addUser" data-provider="dataHolder" finished-at="2023-05-29T22:52:56 IST" duration-ms="12177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aron]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[brio]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emuel]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+        <test-method signature="logout()[pri:3, instance:test_Runner.Driver_Test@247d8ae]" started-at="2023-05-29T22:52:56 IST" name="logout" finished-at="2023-05-29T22:52:58 IST" duration-ms="1485" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[logout status :: true]]>
@@ -29,7 +50,7 @@
         </test-method> <!-- logout -->
       </class> <!-- test_Runner.Driver_Test -->
       <class name="common.Setup_Teardown">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:common.Setup_Teardown@696da30b]" started-at="2023-05-29T09:27:37 IST" name="setup" finished-at="2023-05-29T09:27:59 IST" duration-ms="22123" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:common.Setup_Teardown@5ace1ed4]" started-at="2023-05-29T22:52:25 IST" name="setup" finished-at="2023-05-29T22:52:40 IST" duration-ms="15688" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +61,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:common.Setup_Teardown@696da30b]" started-at="2023-05-29T09:28:10 IST" name="teardown" finished-at="2023-05-29T09:28:10 IST" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:common.Setup_Teardown@5ace1ed4]" started-at="2023-05-29T22:52:58 IST" name="teardown" finished-at="2023-05-29T22:52:58 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

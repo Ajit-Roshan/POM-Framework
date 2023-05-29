@@ -9,7 +9,8 @@
       <class name="common.Setup_Teardown"/>
       <class name="test_Runner.Driver_Test"/>
       <class name="pages.LoginPage"/>
-      <class name="pages.LogoutPage"/>      
+      <class name="pages.LogoutPage"/> 
+      <class name="pages.AddUsers"/>      
     </classes>
   </test> <!-- pom_Test -->
 </suite> <!-- pom_Suite -->

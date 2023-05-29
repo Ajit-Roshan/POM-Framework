@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,11 @@
                       <a href="#" panel-name="suite-pom_Suite" class="show-methods passed suite-pom_Suite"> (show)</a> <!-- show-methods passed suite-pom_Suite -->
                     </span>
                     <div class="method-list-content passed suite-pom_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-pom_Suite" title="test_Runner.Driver_Test" class="method navigator-link" hash-for-method="addUser(aron, brio, emuel)">addUser(aron, brio, emuel)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-pom_Suite" title="test_Runner.Driver_Test" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
@@ -130,6 +135,14 @@
               <span class="class-name">test_Runner.Driver_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addUser(aron, brio, emuel)">
+                  </a> <!-- addUser(aron, brio, emuel) -->
+                  <span class="method-name">addUser</span>
+                  <span class="parameters">(aron, brio, emuel)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="login">
@@ -163,6 +176,7 @@
       &lt;class name=&quot;test_Runner.Driver_Test&quot;/&gt;
       &lt;class name=&quot;pages.LoginPage&quot;/&gt;
       &lt;class name=&quot;pages.LogoutPage&quot;/&gt;
+      &lt;class name=&quot;pages.AddUsers&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- pom_Test --&gt;
 &lt;/suite&gt; &lt;!-- pom_Suite --&gt;
@@ -176,7 +190,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">pom_Test (4 classes)</span>
+                <span class="test-name">pom_Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,20 +216,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'logout')
+data.setCell(0, 1, 'addUser')
 data.setCell(0, 2, 'test_Runner.Driver_Test')
-data.setCell(0, 3, 5401);
+data.setCell(0, 3, 12177);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'test_Runner.Driver_Test')
-data.setCell(1, 3, 5044);
+data.setCell(1, 3, 3747);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'logout')
+data.setCell(2, 2, 'test_Runner.Driver_Test')
+data.setCell(2, 3, 1485);
 window.suiteTableData['pom_Suite']= { tableData: data, tableDiv: 'times-div-pom_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-pom_Suite">
               </div> <!-- times-div-pom_Suite -->
             </div> <!-- times-div -->
@@ -272,18 +290,22 @@ return data;
               <div class="chronological-class-name">test_Runner.Driver_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">22178 ms</span>
+                <span class="method-start">15721 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addUser(aron, brio, emuel)</span>
+                <span class="method-start">19489 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">logout</span>
-                <span class="method-start">27233 ms</span>
+                <span class="method-start">31674 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">common.Setup_Teardown</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">32639 ms</span>
+                <span class="method-start">33162 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
