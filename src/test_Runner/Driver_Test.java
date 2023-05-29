@@ -1,33 +1,36 @@
 package test_Runner;
 
-import org.testng.annotations.DataProvider;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import common.Setup_Teardown;
-import pages.Page1;
+import pages.LoginPage;
+import pages.LogoutPage;
 
 public class Driver_Test extends Setup_Teardown{
 	
-	Page1 page;
-	
-	@Test(dataProvider = "provider" , priority = 1)
-	public void test1(String data) {
-		page= new Page1(dr);
-		page.testSearch(data);
-	}
-
-	@Test(priority = 2)
-	public void test2() throws Throwable {	
-		page.clearSearch();
-	}
-	
-	
-	@DataProvider(name = "provider")
-	public Object[] dataStorage(){
+	@Test(priority = 1)
+	public void login() {
+		LoginPage login= new LoginPage(dr);
+		boolean loginRes= login.verifyLogin("Admin", "admin123");
 		
-		return new Object[][]{		
-			{"ajit "},{" roshan"}		
-		};
-		
+		if(loginRes) {
+			Reporter.log("Pass");
+		}else {
+			Reporter.log("Fail");
+		}		
 	}	
+	
+	@Test(priority = 2)
+	public void logout() {
+		LogoutPage ougout= new LogoutPage(dr);
+		boolean outRes= ougout.verifyLogout();
+		
+		if(outRes) {
+			Reporter.log("Pass");
+		}else {
+			Reporter.log("Fail");
+		}	
+	}
+	
 }
