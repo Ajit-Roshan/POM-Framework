@@ -1,5 +1,7 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -12,14 +14,18 @@ public class LogoutPage {
 	
 	public boolean verifyLogout() {
 		
+		boolean res;
+		
 		dr.findElement(logoutLable).click();
 		dr.findElement(logoutBtn).click();
 		
-		if(dr.getTitle().contains("login")) {
-			return true;
+		dr.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		if(dr.getCurrentUrl().contains("login")) {
+			res= true;
 		}else {
-			return false;
-		}		
+			res= false;
+		}	
+		return res;
 	}	
 	
 	public LogoutPage(WebDriver dr) {

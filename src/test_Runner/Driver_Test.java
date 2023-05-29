@@ -1,5 +1,8 @@
 package test_Runner;
 
+import java.io.FileInputStream;
+import java.util.Properties;
+
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -9,16 +12,20 @@ import pages.LogoutPage;
 
 public class Driver_Test extends Setup_Teardown{
 	
+	public Properties pr;
+	
 	@Test(priority = 1)
-	public void login() {
-		LoginPage login= new LoginPage(dr);
-		boolean loginRes= login.verifyLogin("Admin", "admin123");
+	public void login() throws Throwable {
+		pr= new Properties();
+		pr.load(new FileInputStream("/home/rnc/newSpace/POM_without_pFactory/files_Input/dataStore.properties"));
 		
-		if(loginRes) {
-			Reporter.log("Pass");
-		}else {
-			Reporter.log("Fail");
-		}		
+		String uName= pr.getProperty("uName");
+		String uPass= pr.getProperty("uPass");
+		
+		LoginPage login= new LoginPage(dr);
+		boolean loginRes= login.verifyLogin(uName, uPass);
+		
+		Reporter.log("login status :: "+loginRes);		
 	}	
 	
 	@Test(priority = 2)
@@ -26,11 +33,7 @@ public class Driver_Test extends Setup_Teardown{
 		LogoutPage ougout= new LogoutPage(dr);
 		boolean outRes= ougout.verifyLogout();
 		
-		if(outRes) {
-			Reporter.log("Pass");
-		}else {
-			Reporter.log("Fail");
-		}	
+		Reporter.log("logout status :: "+outRes);
 	}
 	
 }

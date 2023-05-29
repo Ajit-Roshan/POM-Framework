@@ -1,5 +1,7 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -12,16 +14,19 @@ public class LoginPage {
 	By loginBtn= By.xpath("//button[normalize-space()='Login']");
 
 	public boolean verifyLogin(String name , String pass) {
-
+		boolean res;
+		
 		dr.findElement(uNmae).sendKeys(name);
 		dr.findElement(uPass).sendKeys(pass);
 		dr.findElement(loginBtn).click();
 
-		if(dr.getTitle().contains("dashboard")) {
-			return true;
+		dr.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		if(dr.getCurrentUrl().contains("index")) {
+			res= true;
 		}else {
-			return false;
+			res= false;
 		}
+		return res;
 	}
 
 	public LoginPage(WebDriver dr) {
