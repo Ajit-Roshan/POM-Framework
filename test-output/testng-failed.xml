@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [pom_Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+  <test thread-count="5" name="pom_Test(failed)">
+    <classes>
+      <class name="test_Runner.Driver_Test">
+        <methods>
+          <include name="addUser"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test_Runner.Driver_Test -->
+    </classes>
+  </test> <!-- pom_Test(failed) -->
+</suite> <!-- Failed suite [pom_Suite] -->
