@@ -8,19 +8,19 @@
       <![CDATA[logout status :: true]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-30T05:43:35Z" name="pom_Suite" finished-at="2023-05-30T05:44:16Z" duration-ms="41446">
+  <suite started-at="2023-05-30T11:28:17 IST" name="pom_Suite" finished-at="2023-05-30T11:29:12 IST" duration-ms="55936">
     <groups>
     </groups>
-    <test started-at="2023-05-30T05:43:35Z" name="pom_Test" finished-at="2023-05-30T05:44:16Z" duration-ms="41446">
+    <test started-at="2023-05-30T11:28:17 IST" name="pom_Test" finished-at="2023-05-30T11:29:12 IST" duration-ms="55936">
       <class name="test_Runner.Driver_Test">
-        <test-method signature="login()[pri:1, instance:test_Runner.Driver_Test@258d79be]" started-at="2023-05-30T05:43:56Z" name="login" finished-at="2023-05-30T05:44:01Z" duration-ms="4902" status="PASS">
+        <test-method signature="login()[pri:1, instance:test_Runner.Driver_Test@702b8b12]" started-at="2023-05-30T11:28:38 IST" name="login" finished-at="2023-05-30T11:28:45 IST" duration-ms="7135" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[login status :: true]]>
             </line>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="addUser(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:test_Runner.Driver_Test@258d79be]" started-at="2023-05-30T05:44:01Z" name="addUser" data-provider="dataHolder" finished-at="2023-05-30T05:44:14Z" duration-ms="13486" status="PASS">
+        <test-method signature="addUser(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:test_Runner.Driver_Test@702b8b12]" started-at="2023-05-30T11:28:45 IST" name="addUser" data-provider="dataHolder" finished-at="2023-05-30T11:29:02 IST" duration-ms="17039" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,7 +41,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addUser -->
-        <test-method signature="logout()[pri:3, instance:test_Runner.Driver_Test@258d79be]" started-at="2023-05-30T05:44:14Z" name="logout" finished-at="2023-05-30T05:44:16Z" duration-ms="1523" status="PASS">
+        <test-method signature="logout()[pri:3, instance:test_Runner.Driver_Test@702b8b12]" started-at="2023-05-30T11:29:02 IST" name="logout" finished-at="2023-05-30T11:29:12 IST" duration-ms="9858" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[logout status :: true]]>
@@ -50,7 +50,7 @@
         </test-method> <!-- logout -->
       </class> <!-- test_Runner.Driver_Test -->
       <class name="common.Setup_Teardown">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:common.Setup_Teardown@68d279ec]" started-at="2023-05-30T05:43:35Z" name="setup" finished-at="2023-05-30T05:43:56Z" duration-ms="21265" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:common.Setup_Teardown@625732]" started-at="2023-05-30T11:28:17 IST" name="setup" finished-at="2023-05-30T11:28:38 IST" duration-ms="21580" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -61,7 +61,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:common.Setup_Teardown@68d279ec]" started-at="2023-05-30T05:44:16Z" name="teardown" finished-at="2023-05-30T05:44:16Z" duration-ms="195" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:common.Setup_Teardown@625732]" started-at="2023-05-30T11:29:12 IST" name="teardown" finished-at="2023-05-30T11:29:12 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
